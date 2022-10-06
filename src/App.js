@@ -5,10 +5,6 @@ import Login from './components/Login';
 import {Routes,Route} from 'react-router-dom'
 import SignUp from './components/SignUp';
 
-
-
-
-
 function App(){
     return(
     <div>

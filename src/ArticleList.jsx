@@ -26,8 +26,10 @@ const ArticleList=()=>{
             
             
             <div className="box-container">
-                {articles.map(articleComponent)
-            }
+                {
+                    articles.map(articleComponent)
+                }
+                
            {console.log("All articles")}
            {console.log(articles)}
             

@@ -14,9 +14,6 @@ export default function NavBar() {
             <span style={{paddingLeft:'30px'}}>
               <Link to='/'>Post</Link>
             </span>
-            <span style={{paddingLeft:'30px'}}>
-            <Link to='/login'>Login</Link>
-            </span>
             
             
             <Outlet/>

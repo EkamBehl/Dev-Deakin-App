@@ -15,7 +15,7 @@ function articleComponent(article,i){
     />
     )
 }
-const { faker } = require('@faker-js/faker');
+
 const TutorialList=()=>{
     return(
         <div className="container">

@@ -8,7 +8,7 @@ const Article=(props)=>{
           
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
             <div className="image">
-                <img  src={props.icon} alt="article Image"/>
+                <img  src={props.icon} alt="article"/>
             </div>
             <div className="content">
                 <h3>{props.articleName}</h3>

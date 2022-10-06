@@ -1,9 +1,9 @@
 import React,{useState,useContext} from 'react'
 import { Link } from 'react-router-dom';
-import Button from './Button'
+
 import Input from './Input'
 import './Login.css'
-import { signInWithGooglePopup,createUserDocFromAuth,signInAuthUserWithEmailAndPassword } from '../Utils/Firebase';
+import { createUserDocFromAuth,signInAuthUserWithEmailAndPassword } from '../Utils/Firebase';
 import { UserContext } from '../context/user.context';
 export default function Login() {
     const {setCurrentUser}= useContext(UserContext)
@@ -26,10 +26,7 @@ export default function Login() {
 
     }
     const {email,password}=contact;
-    const logGoogleUser=async()=>{
-        const {user}=await signInWithGooglePopup();
-        const userDocRef=createUserDocFromAuth(user);
-    }
+   
 
     
     

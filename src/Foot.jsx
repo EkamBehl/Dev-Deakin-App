@@ -12,10 +12,10 @@ export default function Foot() {
                     Explore
                 </h4>
                 <ul>
-                    <li><a href='#'>Home</a></li>
-                    <li><a href='#'>Questions</a></li>
-                    <li><a href='#'>Articles</a></li>
-                    <li><a href='#'>Tutorials</a></li>
+                    <li><a href='/'>Home</a></li>
+                    <li><a href='/'>Questions</a></li>
+                    <li><a href='/'>Articles</a></li>
+                    <li><a href='/'>Tutorials</a></li>
 
                 </ul>
 
@@ -25,10 +25,10 @@ export default function Foot() {
                     Support
                 </h4>
                 <ul>
-                    <li><a href='#'>FAQs</a></li>
-                    <li><a href='#'>Help</a></li>
-                    <li><a href='#'>Contact Us</a></li>
-                    <li><a href='#'>FAQs</a></li>
+                    <li><a href='/'>FAQs</a></li>
+                    <li><a href='/'>Help</a></li>
+                    <li><a href='/'>Contact Us</a></li>
+                    <li><a href='/'>FAQs</a></li>
                 </ul>
 
             </div>
@@ -38,9 +38,9 @@ export default function Foot() {
                 </h4>
                 <div className="social">
                 
-                    <a href='#'><i className="fab fa-facebook-f"></i></a>
-                    <a href='#'><i className="fab fa-twitter"></i></a>
-                    <a href='#'><i className="fab fa-instagram"></i></a>
+                    <a href='/'><i className="fab fa-facebook-f"></i></a>
+                    <a href='/'><i className="fab fa-twitter"></i></a>
+                    <a href='/'><i className="fab fa-instagram"></i></a>
                 
                 </div>
                 
@@ -57,9 +57,9 @@ export default function Foot() {
             <div className="endp">
                 <span>
                 <li>
-                    <a href='#'>Privacy Policy</a> 
-                    <a href='#'>Terms</a>
-                    <a href='#'>Code Of Conduct</a> </li>
+                    <a href='/'>Privacy Policy</a> 
+                    <a href='/'>Terms</a>
+                    <a href='/'>Code Of Conduct</a> </li>
                 </span>
                 
                 

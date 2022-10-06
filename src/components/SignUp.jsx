@@ -84,7 +84,7 @@ export default function SignUp() {
                     value={contact.confirmPassword}
                 
                 />
-                <button  onClick={handleSubmit}>Submit</button>
+                <button  onClick={handleSubmit} Link='/login'>Submit</button>
                 
                 
 

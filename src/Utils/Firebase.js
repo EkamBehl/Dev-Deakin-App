@@ -61,7 +61,7 @@ export const fetchArticlesAndDocuments=async ()=>{
         console.log("list");
         console.log(list)
 
-        return list;
+        return articleMap;
         
     
 }

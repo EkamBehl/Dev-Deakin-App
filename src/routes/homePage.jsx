@@ -23,7 +23,7 @@ function HomePage() {
     <NavBar/>
     <BGI  
     img={faker.image.animals()}/>
-    
+    <ArticleList/>
     <LoadMore/>
     <TutorialList/>
     <LoadMore/>

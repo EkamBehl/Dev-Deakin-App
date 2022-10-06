@@ -26,16 +26,26 @@ const ArticleList = () => {
 
 
             <div className="box-container">
-                {
-                    Object.keys(articles).map((name) => {
-                        articleComponent(articles[name])
-                    }
+                {Object.keys(articles).map((name)=>
+                <Article
 
-                        //articles.map(articleComponent)
-                    )}
+                icon={articles[name].icon}
+                description={articles[name].description}
+                rating={articles[name].rating}
+                username={articles[name].username}
+                articleName={articles[name].articleName}
+                authorName={articles[name].authorName}
+            />
+                
+                
+                
+                )
+                    
+                }
 
-                {console.log("All articles")}
-                {console.log(articles)}
+
+                
+
 
             </div>
         </div>

@@ -56,7 +56,7 @@ export const fetchArticlesAndDocuments=async ()=>{
         console.log(acc[name]=items)
         
         list.push(acc[name]=items)
-        return acc[name]=items;
+        return list;
     },{})
         console.log("list");
         console.log(list)

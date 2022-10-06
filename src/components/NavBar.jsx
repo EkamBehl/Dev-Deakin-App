@@ -4,7 +4,7 @@ import { Link, Outlet } from 'react-router-dom'
 import{Navbar,Nav,NavDropdown} from 'react-bootstrap'
 import { logOutUser } from '../Utils/Firebase'
 import { auth } from '../Utils/Firebase'
-import LogOut from './LogOut'
+
 import {logOutFunc} from '../Utils/Firebase'
 
 function logout(){
@@ -32,7 +32,7 @@ export default function NavBar() {
             <Link to='/login'>Login</Link>
             </span>
             
-            <Link id='logOut' onClick={logout}>Log Out</Link>
+            <Link style={{paddingLeft:'30px'}} id='logOut' onClick={logout}>Log Out</Link>
             
          
            

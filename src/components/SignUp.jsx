@@ -33,6 +33,7 @@ export default function SignUp() {
         try{
             const {user} = await createAuthUserWithEmailAndPassword(email,password)
             await createUserDocFromAuth(user,{name});
+            window.location.href='/login'
         }
         catch(error){
             console.log("error in creating user",error)
@@ -87,16 +88,6 @@ export default function SignUp() {
                 <button  onClick={handleSubmit} Link='/login'>Submit</button>
                 
                 
-
-
-                
-                
-        
-            
-
-
-
-            
             
         </div>
     )

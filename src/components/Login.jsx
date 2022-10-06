@@ -17,6 +17,7 @@ export default function Login() {
             setCurrentUser(user);
             const userDocRef=createUserDocFromAuth(user);
             alert("logged in!!");
+            window.location.href="/";
         }
         catch(error){
             alert('incorrect password or email!!');

@@ -15,10 +15,13 @@ const firebaseConfig = {
     appId: "1:407798010760:web:6ea54969bd1f5312b4603d"
   };
   
+//auth listner
+
 
 // Initialize Firebase
 const firebaseapp = initializeApp(firebaseConfig);
 const provider=new GoogleAuthProvider();
+const loggedIn=false;
 provider.setCustomParameters({
     prompt:"select_account"
 });
@@ -38,6 +41,10 @@ export const addCollectionAndDocument=async (collectionKey,objectsToAdd,field='k
     console.log("Transaction is successful")
 
 }
+export function logOutFunc(){
+    auth.signOut();
+}
+
 export const fetchArticlesAndDocuments=async ()=>{
     
     const collectionRef=collection(db,'article')
@@ -51,15 +58,12 @@ export const fetchArticlesAndDocuments=async ()=>{
     
         acc[name]=items
  
-        
-        console.log("acc");
-        console.log(acc[name]=items)
+       
         
         list.push(acc[name]=items)
         return list;
     },{})
-        console.log("list");
-        console.log(list)
+        
 
         return articleMap;
         
@@ -75,7 +79,8 @@ export const createUserDocFromAuth=async(userAuth,additonalInformation={})=>{
     
         try{
             await setDoc(userDocRef,{
-                name,email,createdAt
+                name,email,createdAt,
+                ...additonalInformation
             })}catch(error){
         console.log(error);
     }
@@ -92,3 +97,12 @@ export const signInAuthUserWithEmailAndPassword= async(email,password)=>{
     if(!email || !password){return alert("stupid")};
     return await signInWithEmailAndPassword(auth,email,password);
 }
+auth.onAuthStateChanged(user=>{
+    if(user==null){
+        console.log("none logged in")
+    }
+    else{
+        console.log(user)
+    }
+    
+})

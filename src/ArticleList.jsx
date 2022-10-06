@@ -5,7 +5,7 @@ import contentList from "./contentList";
 import { ArticleContext } from "./context/article.context";
 
 const { faker } = require('@faker-js/faker');
-function articleComponent(article,i){
+function articleComponent(article){
     return(
         <Article
        
@@ -27,8 +27,12 @@ const ArticleList=()=>{
             
             <div className="box-container">
                 {
-                    articles.map(articleComponent)
-                }
+                    Object.keys(articles).map((name)=>{
+                        articleComponent(articles[name])
+                    }
+
+                    //articles.map(articleComponent)
+                )}
                 
            {console.log("All articles")}
            {console.log(articles)}
